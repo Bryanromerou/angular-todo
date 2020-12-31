@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name:string = 'Bryan Romero';//Best Practice to assign a type
+
+  constructor(){//This constructor works like any other constructor and it gets ran in App component initialization
+    console.log("1 2 3");
+    this.name = "Peter Griffin"; // This has to be a string because of the typescript defined   
+  }
 }
